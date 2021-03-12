@@ -1,0 +1,26 @@
+dubbo:
+  application:
+    name: dubbo_provider
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  #    address: redis://localhost:6379
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: top.durandal
+spring:
+  datasource:
+    username: root
+    password: 1108
+    url: jdbc:mysql://49.235.194.31:3306/chufang?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: user
+      password: 123
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+server:
+  port: 2222

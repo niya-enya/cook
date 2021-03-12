@@ -1,0 +1,23 @@
+server:
+  port: 8888
+dubbo:
+  application:
+    name: annotation-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+#    address: redis://127.0.0.1:6379
+  consumer:
+    timeout: 5000
+spring:
+  security:
+    user:
+      name: user
+      password: 123
+  datasource:
+    username: root
+    password: 1108
+    url: jdbc:mysql://49.235.194.31:3306/chufang?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
